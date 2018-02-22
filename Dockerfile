@@ -14,7 +14,7 @@ RUN conda config --add channels conda-forge && \
     rm -rf /opt/conda/pkgs/*
 ENV PATH /opt/conda/envs/isisdeps/bin:$PATH
 
-RUN mkdir -p /workspace/ISIS3_cmake
+RUN mkdir -p /workspace/ISIS3_cmake && mkdir -p /workspace/ISIS3_cmake@tmp
 
 ENTRYPOINT [ "/bin/bash", "-c", "--" ]
 
