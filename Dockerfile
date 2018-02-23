@@ -1,6 +1,6 @@
 FROM fedora:25
 
-RUN dnf install gcc-c++
+RUN dnf install -y gcc-c++
 RUN dnf install -y wget bzip2 ca-certificates
 
 RUN echo 'export PATH=/opt/conda/bin:$PATH' > /etc/profile.d/conda.sh && \
