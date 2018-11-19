@@ -1,0 +1,12 @@
+FROM evindunn/jenkins-worker:ubuntu-1804
+
+USER root
+
+RUN apt-get install -y gcc
+RUN apt-get install -y wget bzip2 ca-certificates
+
+RUN apt-get install -y x11-apps
+RUN apt-get install -y libgl1-mesa-glx
+RUN apt-get install -y libglu1-mesa-dev
+
+USER jenkins

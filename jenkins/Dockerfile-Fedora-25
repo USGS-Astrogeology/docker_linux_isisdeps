@@ -1,0 +1,13 @@
+FROM evindunn/jenkins-worker:fedora-25
+
+USER root
+
+RUN dnf install -y gcc-c++
+RUN dnf install -y wget bzip2 ca-certificates
+RUN dnf install -y which
+
+RUN dnf install -y xorg-x11-apps
+RUN dnf install -y mesa-libGL
+RUN dnf install -y mesa-libGLU-devel
+
+USER jenkins
