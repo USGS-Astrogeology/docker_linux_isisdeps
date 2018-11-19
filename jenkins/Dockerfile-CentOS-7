@@ -2,12 +2,12 @@ FROM evindunn/jenkins-worker:centos-7
 
 USER root
 
-RUN dnf install -y gcc-c++
-RUN dnf install -y wget bzip2 ca-certificates
-RUN dnf install -y which
+RUN yum install -y gcc-c++
+RUN yum install -y wget bzip2 ca-certificates
+RUN yum install -y which
 
-RUN dnf install -y xorg-x11-apps
-RUN dnf install -y mesa-libGL
-RUN dnf install -y mesa-libGLU-devel
+RUN yum install -y xorg-x11-apps
+RUN yum install -y mesa-libGL
+RUN yum install -y mesa-libGLU-devel
 
 USER jenkins
