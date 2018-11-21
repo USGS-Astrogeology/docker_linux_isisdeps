@@ -5,7 +5,7 @@ ENV PATH $CONDA_HOME/bin:$PATH
 
 USER root
 
-RUN dnf install -y gcc-c++
+RUN dnf install -y git gcc-c++
 RUN dnf install -y bzip2 ca-certificates
 RUN dnf install -y which
 

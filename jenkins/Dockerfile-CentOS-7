@@ -5,7 +5,7 @@ ENV PATH $CONDA_HOME/bin:$PATH
 
 USER root
 
-RUN yum install -y gcc-c++
+RUN yum install -y git gcc-c++
 RUN yum install -y bzip2 ca-certificates
 RUN yum install -y which
 
